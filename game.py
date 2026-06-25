@@ -20,9 +20,9 @@ def restart_game():
     print("choose your character")
     print("")
 
-    print("1. assassin")
-    print("2. warrior")
-    print("3. mage")
+    print("1. A S S A S S I N")
+    print("2. W A R R I O R")
+    print("3. M A G E")
 
     time.sleep(1)
     print("")
@@ -117,11 +117,11 @@ def restart_game():
         print("enemy health remaining",e1.HP)
     
         if player.HP <= 0  :
-            print("you lose")
+            print("Y O U  L O S E")
             continue
             
         elif e1.HP <= 0 :
-            print("you won")
+            print("Y O U  W O N")
             continue
             
 
@@ -162,10 +162,11 @@ def restart_game():
     if player.is_alive():
         print("N E W   E N E M Y   U P C O M M I N G  !!!")
 
-    time.sleep(1)
+    time.sleep(3)
     print("prepare yourself again")
     player.HP += 20
     print("you get 20 HP now lets goo")
+    time.sleep(2)
 
     while player.is_alive() > 0 and e2.is_alive() > 0:
 
@@ -271,20 +272,21 @@ def restart_game():
                 exit()
 
 
-print("DRAGON  QUEST")
+print("D R A G O N   Q U E S T")
 time.sleep(1)
 print("loading...")
-time.sleep(1)
+time.sleep(2)
 print("loading...")
 time.sleep(1)
 print("game ready")
 print("")
+time.sleep(1)
 
-input("press enter to start:")
+input("press ENTER to start:")
 
 print("")
-print("1. start the game")
-print("2. exit the game")
+print("1. START the game")
+print("2. EXIT the game")
 print("")
 
 choose = input("choose 1 or 2:")
@@ -307,9 +309,9 @@ print("")
 print("choose your character")
 print("")
 
-print("1. assassin")
-print("2. warrior")
-print("3. mage")
+print("1. A S S A S S I N")
+print("2. W A R R I O R")
+print("3. M A G E")
 
 time.sleep(1)
 print("")
@@ -525,6 +527,14 @@ while player.is_alive() > 0 and e2.is_alive() > 0:
         
     elif e2.HP <= 0 :
         print("you won")
+        print("wanna play again")
+        print("1. play again")
+        print("2. exit")
+        choice = ("choose 1 or 2")
+        if choice == "1":
+            restart_game()
+        elif choice == "2":
+            exit()
         continue
         
 
@@ -567,7 +577,7 @@ while player.is_alive() > 0 and e2.is_alive() > 0:
         
         
 
-    time.sleep(1)
+    
 
 
 
